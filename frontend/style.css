@@ -1,0 +1,205 @@
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    background: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    
+}
+.nav-item {
+    margin-right: 20px; /* Adjust this value as needed */
+}
+/* Static underline for the 'HOME' link */
+.home-link {
+    border-bottom: 2px solid #FFBD39;  /* Static underline color */
+}
+/* Hover underline effect for other links */
+.nav-link:hover {
+    border-bottom: 2px solid #FFBD39;  /* Hover underline color */
+    transition: border-bottom 0.3s ease;  /* Smooth transition for hover effect */
+}
+.nav-link:not(.home-link):hover {
+    border-bottom: 2px solid #FFBD39;  /* Hover underline color */
+}
+
+/*CONTACT*/
+#contacts {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+#contacts::after {
+    content: "Contact";
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/*RESUME*/
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+.section-title::after {
+    content: "Degree";
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.section-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+.resume-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.resume-card .year {
+    color: #f5c32c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.resume-card .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.resume-card .institution {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.resume-card p {
+    color: #bbb;
+}
+
+
+/*--IMAGE--*/
+img{
+    width: 500px;
+    height: 500px;
+}
+
+/*--ABOUT-SECTION--*/
+
+#about h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.personal-info li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+span{
+    opacity: 50%;
+}
+
+/*--SKILLS--*/
+
+.projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+.projects-title::after {
+    content: "Skills";
+    font-size: 6rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.section-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+.progress {
+    height: 8px;
+    background-color: #333;
+}
+.progress-bar {
+    background-color: #f5c32c;
+}
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.project-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.project-percentage {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f5c32c;
+}
+
+/*STAT-SECTION*/
+.stats-section {
+    background-color: #111;
+}
+
+.stat-box h2 {
+    font-size: 2rem;
+}
+
+.freelance-section {
+    height: 300px;
+}
+
+.freelance-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.freelance-section h2 span {
+    color: #FFD700; /* Gold color */
+}
+
+.overlay {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/*BUTTON*/
+.btn-warning {
+    color: #000;
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #ffb700;
+}

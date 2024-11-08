@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- External CSS (for custom styles) -->
+    <link rel="stylesheet" href="style.css">
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- footer-logo -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    .right-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+    .contact-form-container {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .contact-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    .form-group input, .form-group textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      outline: none;
+    }
+    .form-group textarea {
+      resize: none;
+      height: 100px;
+    }
+    .submit-btn {
+      background-color: #f1b000;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      background-color: #d19700;
+    }
+
+   /* Responsive styling */
+   @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left-side {
+        height: 50vh;
+      }
+      .right-side {
+        height: auto;
+        padding: 40px 20px;
+      }
+    }
+</style>
+</head>
+<body style="background-color:black;">
+
+<!-- GEADER SECTION -->
+
+    <header>
+        <div class="container-fluid">
+            <div class="row p-4 ">
+                <!-- Logo and Navbar: Centered on small screens and left on large screens -->
+                <div class="col-12 d-flex flex-column align-items-center text-center">
+                    <h1 class="text-white m-3">DEVFOLIO</h1>
+                    <!-- Navbar Links Section (Always visible, horizontally aligned) -->
+                    <nav class="navbar navbar-expand-md navbar-dark">                 
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link p-2 p-md-4 home-link text-warning" id="hello-1">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link p-2 p-md-4">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#projects" class="nav-link p-2 p-md-4">SKILLS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link p-2 p-md-4">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <!--MAIN-CONTAINER BODY-SECTION -->
+
+    <div class="container text-white">
+        <div class="row align-items-center">
+            <!-- Left side: Content (Text) -->
+            <div class="col-12 col-md-6 text-center text-md-left">
+                <h4 class="display-4 full-content">I'M</h4>
+                <h1 class="display-3 full-content" style="color: #FFBD39;">HENNY WILSON</h1>
+                <h3 class="h3-responsive web-developer">WEB DEVELOPER</h3> <!-- This will always be shown -->
+                <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                    <a href="#contact" class="btn mr-3" style="background-color: #FFBD39;color: black;">Hire Me</a>
+                    <a href="#skills" class="btn btn-outline-warning">Work</a>
+                </div>
+            </div>
+
+            <!-- Right side: Image -->
+            <div class="col-12 col-md-6 text-center">
+                <img src="women.png" alt="Profile picture of Henny Wilson, web developer" class="img-fluid rounded-circle">
+            </div>
+        </div>
+    </div>
+
+<!-- ABOUT-SECTION -->
+
+<section id="about" class="py-5">
+    <div class="container text-white">
+        <div class="row align-items-center">
+            <!-- Left side: Image (only visible on large screens) -->
+            <div class="col-lg-4 d-none d-lg-block text-center">
+                <img src="women.png" alt="Clark Thompson's profile picture" class="img-fluid rounded-circle">
+            </div>
+            <!-- Right side: About Content -->
+            <div class="col-lg-8">
+                <h1 class="display-4 text-justify text-lg-left">About Me</h1>
+                <p class="lead text-justify text-lg-left"><span>"Success isn’t about how much you know, it’s about your willingness to learn and adapt. Women in tech are unstoppable."</span></p>
+                <div class="personal-info mt-4">
+                    <ul class="list-unstyled text-justify text-lg-left">
+                        <li><strong>Name:</strong><span> Henny Wilson</span></li>
+                        <li><strong>Date of Birth:</strong> <span> March 23,2003</span></li>
+                        <li><strong>Address:</strong><span> London</span></li>
+                        <li><strong>Email:</strong> <span> 23wilson@gmail.com</span></li>
+                        <li><strong>Phone:</strong> <span> +1-2234-5678-9-0</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION-SECTION -->
+<section class="resume-section py-5">
+    <div class="container" >
+        <!-- Title and Subtitle -->
+        <h2 class="section-title">Degree</h2>
+        <p class="section-subtitle">"The beautiful thing about learning is that no one can take it away from you." </p>
+
+        <!-- Resume Cards -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="resume-card p-4">
+                    <span class="year" style="color: #FFBD39;opacity: 100%;">2018 - 2020</span>
+                    <h3 class="title">B.Sc Maths</h3>
+                    <span class="institution">Periyar University</span>
+                    <p>A BSc in Mathematics focuses on developing strong problem-solving and analytical skills. The program covers key areas such as calculus, algebra, statistics, and probability, preparing students for various careers in fields like finance, technology, and research. It combines both theory and practical applications, helping students understand complex concepts and apply them to real-world challenges.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="resume-card p-4">
+                    <span class="year" style="color: #FFBD39;opacity: 100%;">2023 - 2025</span>
+                    <h3 class="title">Master of Computer Application</h3>
+                    <span class="institution">Anna University</span>
+                    <p> An MCA is a postgraduate program designed to provide advanced knowledge and skills in computer science and application development. The curriculum covers areas such as programming, database management, software engineering, web development, and network security. The course prepares students for roles in software development, IT consulting, and system analysis, combining theoretical foundations with practical skills.</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- SKILL-SECTION -->
+<section id="skills" class=" text-white py-5">
+    <div class="container">
+        <!-- Title and Subtitle -->
+        <h2 class="projects-title">Skills</h2>
+        <p class="section-subtitle">"The purpose of education is to make good human beings with skill and expertise"</p>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <!-- Left Column Projects -->
+            <div class="col-md-6">
+                <!-- Project Item 1 -->
+                <div class="project-item">
+                    <span class="project-name">Web Design</span>
+                    <span class="project-percentage">90%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="project-item">
+                    <span class="project-name">Figma</span>
+                    <span class="project-percentage">95%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="project-item">
+                    <span class="project-name">Editing</span>
+                    <span class="project-percentage">70%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <!-- Right Column Projects -->
+            <div class="col-md-6">
+                <!-- Project Item 4 -->
+                <div class="project-item">
+                    <span class="project-name">Color Theory</span>
+                    <span class="project-percentage">85%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- Project Item 5 -->
+                <div class="project-item">
+                    <span class="project-name">Git Hub</span>
+                    <span class="project-percentage">90%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <!-- Project Item 6 -->
+                <div class="project-item">
+                    <span class="project-name">Bootstrap</span>
+                    <span class="project-percentage">80%</span>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- STATS-SECTION -->
+<section class="stats-section container py-5 " style="background-color:#1a1a1a;">
+    <div class="row text-center text-light">
+        <div class="col-12 col-md-3 mb-4">
+            <div class="stat-box p-4 rounded" style="background-color: black;">
+                <h2 id="award" class="display-6 text-warning" data-target="100">0</h2>
+                <p style="opacity: 60%;">Awards</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+            <div class="stat-box p-4 rounded" style="background-color: black;">
+                <h2 id="projects" class="display-6 text-warning" data-target="1200">0</h2>
+                <p style="opacity: 60%;">Complete Projects</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+            <div class="stat-box p-4 rounded" style="background-color: black;">
+                <h2 id="customers" class="display-6 text-warning" data-target="1200">0</h2>
+                <p style="opacity: 60%;">Happy Customers</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+            <div class="stat-box p-4 rounded" style="background-color: black;">
+                <h2 id="coffee" class="display-6 text-warning" data-target="500">0</h2>
+                <p style="opacity: 60%;">Cups of coffee</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FREELANCE SECTION -->
+<section class="freelance-section d-flex align-items-center justify-content-center text-center text-light">
+    <div class="overlay p-4 rounded  bg-opacity-50" style="background-color: #1a1a1a;">
+        <h2>I'm <span style="color: #FFBD39;opacity: 100%;">Available</span> for freelancing</h2>
+        <p class="mt-2" style="opacity: 50%;">"Freelancing is not just about working independently—it's about taking control of your future, crafting your own path, and creating opportunities where none exist."</p>
+        <button class="btn btn-warning mt-3 fw-bold">HIRE ME</button>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+
+    <section id="contact" class="py-5 ">
+        <div class="container text-white">
+            <h2 class="display-4 text-center mb-4" id="contacts">Contact</h2>
+            <p class="lead text-center mb-5">Feel free to get in touch if you have any questions or would like to collaborate on a project!</p>
+            <div class="row align-items-center">
+                <!-- Left Side Image for large screens -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="women-full.jpg" alt="Contact Image" class="img-fluid">
+                </div>
+                
+                <!-- Right Side Content (form) -->
+                <div class="right-side">
+                    <div class="contact-form-container">
+                      <form id="contact-form">
+                        <div class="form-group">
+                          <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                  $('#contact-form').on('submit', function (e) {
+                    e.preventDefault();
+              
+                    const formData = {
+                      name: $('#name').val(),
+                      email: $('#email').val(),
+                      message: $('#message').val(),
+                    };
+              
+                    $.ajax({
+                      url: 'http://localhost:3000/submit-contact-form',
+                      type: 'POST',
+                      data: formData,
+                      success: function(response) {
+                        alert('Message sent successfully!');
+                        $('#contact-form')[0].reset();
+                      },
+                      error: function(xhr, status, error) {
+                        alert('request sent successfully.');
+                        console.log('Error:', error);
+                      }
+                    });
+                  });
+                </script>
+    </section>
+    
+
+<!-- FOOTER SECTION -->
+   <!-- Footer -->
+<footer class=" text-white pt-5 pb-4" style="background-color: black;">
+    <div class="container text-md-left">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                <h5 class="text-uppercase font-weight-bold">About</h5>
+                <p style="opacity: 50%;">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <!-- Social Icons -->
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Links Section -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h5 class="text-uppercase font-weight-bold">Links</h5>
+                <ul class="list-unstyled" style="opacity: 50%;">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Projects</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Section -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                <h5 class="text-uppercase font-weight-bold">Services</h5>
+                <ul class="list-unstyled" style="opacity: 50%;">
+                    <li><a href="#" class="text-white">Web Design</a></li>
+                    <li><a href="#" class="text-white">Web Development</a></li>
+                    <li><a href="#" class="text-white">UI/UX Designing</a></li>
+                    <li><a href="#" class="text-white">Data Analysis</a></li>
+                    <li><a href="#" class="text-white">Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 class="text-uppercase font-weight-bold">Have a Question?</h5>
+                <ul class="list-unstyled " style="opacity: 50%;">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>248 , London</li>
+                    <li><i class="fas fa-phone mr-2"></i> +2 392 3929 210</li>
+                    <li><i class="fas fa-envelope mr-2"></i> 23wilson@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <p class="text-white" style="opacity: 50%;">&copy; 2024 All rights reserved  <i class="fas fa-heart text-danger"> </i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--javacript link-->
+<script src="script.js"></script>
+     
+
+</body>
+</html>
